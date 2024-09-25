@@ -1,0 +1,63 @@
+/* Basic styling for the carousel */
+/* Basic styling for the carousel */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    width: 100%;
+    height: 50vh; /* Carousel height is half of the viewport height */
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* Hide overflow of images outside the container */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the whole image is displayed without distortion */
+    display: block;
+}
+
+/* Keyframes for simple display, each slide appears one by one */
+@keyframes showSlides {
+    0%, 20% {
+        opacity: 1; /* Show first slide */
+    }
+    25%, 45% {
+        opacity: 0; /* Hide first slide */
+    }
+    50%, 70% {
+        opacity: 1; /* Show second slide */
+    }
+    75%, 95% {
+        opacity: 0; /* Hide second slide */
+    }
+    100% {
+        opacity: 1; /* Show third slide */
+    }
+}
+
+.carousel .slide:nth-child(1) {
+    animation: showSlides 12s infinite;
+}
+.carousel .slide:nth-child(2) {
+    animation: showSlides 12s infinite 3s;
+}
+.carousel .slide:nth-child(3) {
+    animation: showSlides 12s infinite 6s;
+}
+.carousel .slide:nth-child(4) {
+    animation: showSlides 12s infinite 9s;
+}
