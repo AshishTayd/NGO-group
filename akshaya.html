@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Select Gift Frequency</title>
+</head>
+<body>
+    <div class="container">
+        <p>Donation Form</p>
+
+        <!-- Time Selection (Monthly / One Time) -->
+        <div class="time">
+            <label><input type="radio" name="gift-frequency" checked> Monthly</label>
+            <label><input type="radio" name="gift-frequency"> One Time</label>
+        </div>
+
+        <!-- Select Amount -->
+        <p>Select Amount</p>
+        <div class="value">
+            <span class="money">$12</span>
+            <span class="money">$30</span>
+            <span class="money">$40</span>
+            <span class="money">$50</span>
+            <span class="money">$60</span>
+        </div>
+
+        <!-- Transaction Fee Checkbox -->
+        <div class="confirm">
+            <input type="checkbox" id="cover-fee">
+            <label for="cover-fee">Yes, I'll generously add $0.30 each month to cover the transaction fee</label>
+        </div>
+
+        <!-- Name and Email Input Fields -->
+        <div class="input">
+            <p>Name</p>
+            <input type="text" name="name" placeholder="Enter your Name">
+
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter your Email">
+        </div>
+
+        <!-- Honorary Gift and Submit Button -->
+        <p>Give in honor of another person</p>
+        <button>Donate Now</button>
+
+        <!-- Terms and Privacy Policy -->
+        <p>By donating, you agree to our <span class="blue">terms of services</span> and <span class="blue">privacy policy</span>.</p>
+    </div>
+
+    <!-- Open Button -->
+    <button id="openSliderBtn">Open Account Details</button>
+
+    <!-- Slider (Initially hidden) -->
+    <div id="accountSlider" class="slider">
+        <span class="close-btn" id="closeSliderBtn">&times;</span>
+        <h2>Account Details</h2>
+        <p>Name: Abhinav Bharat Foundation</p>
+        <p>Email: abhinavbharatfoundationgimail.com</p>
+        
+        <p>Address: Wardha, State Bank of India, 
+            New wardha Main Br 11, Sansad Marg, New wardha-442203.
+
+            FCRA A/C:
+
+
+            <br>
+            Name - Abhinav Bharat Foundation
+            Ac. No - xxxxxxxxxxx (FCRA SAVINGS ACCOUNT)
+            Bank - State Bank of India SBI
+            Branch - Wardha
+            IFSC - SBINxxxxxxx
+            SWIFT - SBININBB104
+            Address - Wardha, State Bank of India, 
+            New wardha Main Br 11, Sansad Marg, New wardha-442203.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
